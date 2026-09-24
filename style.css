@@ -233,7 +233,7 @@ body {
 .main-content {
     width: 100%;
     max-width: 100%;
-    min-height: calc(100vh - 140px);
+    min-height: 100vh;
     padding-top: 140px;
     overflow: hidden;
 }
@@ -778,7 +778,7 @@ body {
 
     .main-content {
         padding-top: 110px;
-        min-height: calc(100vh - 110px);
+        min-height: 100vh;
     }
 
     .logo-area {
@@ -824,10 +824,8 @@ body {
         font-size: 17px;
     }
 
-    /*
-     * On narrower screens the massage box opens below
-     * the main menu instead of extending off the right side.
-     */
+    /* MASSAGE BOX */
+
     .massage-box {
         left: 0;
         top: 100%;
@@ -867,7 +865,7 @@ body {
 
     .main-content {
         padding-top: 90px;
-        min-height: calc(100vh - 90px);
+        min-height: 100vh;
     }
 
 
