@@ -1,3 +1,4 @@
+```css
 * {
     margin: 0;
     padding: 0;
@@ -29,13 +30,17 @@ body {
 }
 
 
+/* ================================= */
 /* HEADER */
+/* ================================= */
 
 .main-header {
     width: 100%;
     height: 140px;
     background-color: #366761;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -45,7 +50,9 @@ body {
 }
 
 
+/* ================================= */
 /* MENU */
+/* ================================= */
 
 .menu-area {
     display: flex;
@@ -83,7 +90,9 @@ body {
 }
 
 
+/* ================================= */
 /* LOGO */
+/* ================================= */
 
 .logo-area {
     position: absolute;
@@ -95,11 +104,14 @@ body {
 .logo-area img {
     display: block;
     max-height: 180px;
+    max-width: 100%;
     width: auto;
 }
 
 
+/* ================================= */
 /* WHATSAPP & BOOK NOW */
+/* ================================= */
 
 .booking-area {
     display: flex;
@@ -162,7 +174,9 @@ body {
 }
 
 
+/* ================================= */
 /* LANGUAGE BUTTONS */
+/* ================================= */
 
 .language-buttons {
     position: absolute;
@@ -193,7 +207,9 @@ body {
 }
 
 
+/* ================================= */
 /* ACTIVE LANGUAGE BUTTON */
+/* ================================= */
 
 .language-button.active {
     animation: languageFlash 0.8s ease-in-out infinite;
@@ -216,7 +232,9 @@ body {
 }
 
 
+/* ================================= */
 /* MAIN PAGE */
+/* ================================= */
 
 .main-content {
     width: 100%;
@@ -225,7 +243,9 @@ body {
 }
 
 
+/* ================================= */
 /* HERO SLIDESHOW */
+/* ================================= */
 
 .hero-image {
     position: relative;
@@ -276,7 +296,9 @@ body {
 }
 
 
+/* ================================= */
 /* HERO TEXT */
+/* ================================= */
 
 .hero-text {
     position: absolute;
@@ -284,6 +306,7 @@ body {
     left: 8%;
     transform: translateY(-50%);
     width: 450px;
+    max-width: 84%;
     z-index: 10;
 }
 
@@ -305,7 +328,9 @@ body {
 }
 
 
+/* ================================= */
 /* HUBUNGI KAMI BUTTON */
+/* ================================= */
 
 .contact-button {
     display: inline-block;
@@ -335,13 +360,16 @@ body {
 }
 
 
+/* ================================= */
 /* MENU DROPDOWN */
+/* ================================= */
 
 .menu-dropdown {
     position: fixed;
     top: 79px;
     left: 20px;
     width: 220px;
+    max-width: calc(100vw - 40px);
     background-color: #366761;
     border: 2px solid #27592D;
     z-index: 99999;
@@ -359,7 +387,9 @@ body {
 }
 
 
+/* ================================= */
 /* STANDARD MENU LINKS */
+/* ================================= */
 
 .menu-dropdown a {
     display: block;
@@ -384,7 +414,9 @@ body {
 }
 
 
-/* MASSAGE SERVICES & PRICELIST BUTTON */
+/* ================================= */
+/* MASSAGE SERVICES & PRICELIST */
+/* ================================= */
 
 .massage-services-pricelist-button {
     display: block;
@@ -410,7 +442,9 @@ body {
 }
 
 
-/* MENU ITEMS SLIDE DOWN ONE BY ONE */
+/* ================================= */
+/* MENU ITEMS SLIDE DOWN */
+/* ================================= */
 
 .menu-dropdown.show .massage-services-pricelist-button {
     animation: menuSlideDown 0.5s ease forwards;
@@ -446,7 +480,9 @@ body {
 }
 
 
-/* MENU ITEMS SLIDE UP WHEN CLOSING */
+/* ================================= */
+/* MENU ITEMS SLIDE UP */
+/* ================================= */
 
 .menu-dropdown:not(.show) .massage-services-pricelist-button {
     animation: menuSlideUp 0.4s ease forwards;
@@ -482,7 +518,9 @@ body {
 }
 
 
+/* ================================= */
 /* MASSAGE SERVICES EXPANDING BOX */
+/* ================================= */
 
 .massage-box {
     position: absolute;
@@ -510,22 +548,19 @@ body {
 }
 
 
-/* MASSAGE BOX OPEN OR CLOSING */
-
 .massage-box.show,
 .massage-box.closing {
     visibility: visible;
 }
-
-
-/* MASSAGE BOX OPEN */
 
 .massage-box.show {
     pointer-events: auto;
 }
 
 
+/* ================================= */
 /* MASSAGE BOX CELLS */
+/* ================================= */
 
 .massage-cell {
     background-color: #366761;
@@ -552,7 +587,10 @@ body {
     background-color: #b3ecec;
 }
 
-/* MASSAGE CELLS SLIDE OUT ONE BY ONE */
+
+/* ================================= */
+/* MASSAGE CELLS SLIDE OUT */
+/* ================================= */
 
 .massage-box.show .massage-cell {
     animation: massageSlideOut 0.6s ease-out forwards;
@@ -604,14 +642,13 @@ body {
 }
 
 
-/* MASSAGE CELLS SLIDE BACK IN ONE BY ONE */
+/* ================================= */
+/* MASSAGE CELLS SLIDE BACK IN */
+/* ================================= */
 
 .massage-box.closing .massage-cell {
     animation: massageSlideIn 0.5s ease-in forwards;
 }
-
-
-/* REVERSE ORDER */
 
 .massage-box.closing .massage-cell:nth-child(8) {
     animation-delay: 0.05s;
@@ -659,7 +696,9 @@ body {
 }
 
 
+/* ================================= */
 /* MASSAGE SERVICE TEXT */
+/* ================================= */
 
 .service-name {
     color: white;
@@ -677,7 +716,9 @@ body {
 }
 
 
+/* ================================= */
 /* MASSAGE TREATMENTS */
+/* ================================= */
 
 .massage-treatments {
     width: 100%;
@@ -686,7 +727,9 @@ body {
 }
 
 
+/* ================================= */
 /* ALTERNATING SECTIONS */
+/* ================================= */
 
 .below-hero {
     width: 100%;
@@ -697,7 +740,7 @@ body {
 .green-space {
     width: 50%;
     height: 100%;
-    background-color: 	#366761;
+    background-color: #366761;
     display: flex;
     align-items: center;
 }
@@ -734,3 +777,373 @@ body {
     object-fit: cover;
     display: block;
 }
+
+
+/* ================================= */
+/* TABLET RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+    .main-header {
+        padding: 0 15px;
+    }
+
+    .logo-area img {
+        max-height: 130px;
+        max-width: 220px;
+    }
+
+    .whatsapp-number {
+        font-size: 15px;
+    }
+
+    .booking-area {
+        gap: 10px;
+    }
+
+    .hero-text {
+        left: 6%;
+        width: 420px;
+        max-width: 88%;
+    }
+
+    .massage-box {
+        width: 380px;
+    }
+
+    .below-hero {
+        height: auto;
+        min-height: 400px;
+    }
+}
+
+
+/* ================================= */
+/* MOBILE RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .main-header {
+        height: 90px;
+        padding: 0 12px;
+    }
+
+
+    /* MENU */
+
+    .menu-button {
+        gap: 7px;
+    }
+
+    .menu-bars {
+        gap: 4px;
+    }
+
+    .menu-bars span {
+        width: 23px;
+        height: 3px;
+    }
+
+    .menu-text {
+        font-size: 14px;
+    }
+
+
+    /* LOGO */
+
+    .logo-area {
+        max-width: 42%;
+    }
+
+    .logo-area img {
+        max-height: 72px;
+        max-width: 150px;
+    }
+
+
+    /* BOOKING AREA */
+
+    .booking-area {
+        gap: 7px;
+    }
+
+    .whatsapp-number {
+        display: none;
+    }
+
+    .book-now {
+        padding: 8px 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+
+    /* LANGUAGE BUTTONS */
+
+    .language-buttons {
+        top: 50px;
+        right: 0;
+        gap: 3px;
+    }
+
+    .language-button {
+        width: 30px;
+        height: 21px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    .main-content {
+        min-height: calc(100vh - 90px);
+        padding-top: 90px;
+    }
+
+
+    /* HERO */
+
+    .hero-image {
+        height: 520px;
+    }
+
+
+    /* HERO TEXT */
+
+    .hero-text {
+        top: 50%;
+        left: 7%;
+        width: 86%;
+        max-width: none;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+        line-height: 1.15;
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .contact-button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+
+    /* MENU DROPDOWN */
+
+    .menu-dropdown {
+        top: 90px;
+        left: 12px;
+        width: calc(100vw - 24px);
+        max-width: 320px;
+    }
+
+    .menu-dropdown a {
+        padding: 13px 15px;
+        font-size: 15px;
+    }
+
+    .massage-services-pricelist-button {
+        padding: 13px 15px;
+        font-size: 15px;
+    }
+
+
+    /* MASSAGE BOX */
+
+    .massage-box {
+        position: fixed;
+        left: 12px;
+        top: 90px;
+
+        width: calc(100vw - 24px);
+        max-width: none;
+
+        height: auto;
+        min-height: 400px;
+        max-height: calc(100vh - 102px);
+
+        overflow: hidden;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .massage-cell {
+        padding: 8px 5px;
+    }
+
+    .service-name {
+        font-size: 13px;
+        line-height: 1.15;
+        margin-bottom: 6px;
+    }
+
+    .service-price {
+        font-size: 11px;
+        line-height: 1.35;
+    }
+
+
+    /* MASSAGE TREATMENTS */
+
+    .massage-treatments {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* BELOW HERO */
+
+    .below-hero {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .green-space {
+        width: 100%;
+        height: auto;
+        min-height: 350px;
+    }
+
+    .unwind-text {
+        padding: 35px 25px;
+    }
+
+    .unwind-text h2 {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .unwind-text p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+
+    .spa-image {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+/* ================================= */
+/* SMALL PHONE RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .main-header {
+        height: 80px;
+        padding: 0 9px;
+    }
+
+
+    /* MENU */
+
+    .menu-bars span {
+        width: 21px;
+        height: 2.5px;
+    }
+
+    .menu-text {
+        font-size: 12px;
+    }
+
+
+    /* LOGO */
+
+    .logo-area {
+        max-width: 38%;
+    }
+
+    .logo-area img {
+        max-height: 62px;
+        max-width: 120px;
+    }
+
+
+    /* BOOK NOW */
+
+    .book-now {
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+
+    /* LANGUAGE BUTTONS */
+
+    .language-buttons {
+        top: 44px;
+        gap: 2px;
+    }
+
+    .language-button {
+        width: 27px;
+        height: 19px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    .main-content {
+        padding-top: 80px;
+        min-height: calc(100vh - 80px);
+    }
+
+
+    /* HERO */
+
+    .hero-image {
+        height: 500px;
+    }
+
+
+    /* HERO TEXT */
+
+    .hero-text {
+        top: 50%;
+        left: 6%;
+        width: 88%;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+        line-height: 1.15;
+        margin-bottom: 14px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+        line-height: 1.45;
+        margin-bottom: 18px;
+    }
+
+    .contact-button {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+
+    /* MENU */
+
+    .menu-dropdown {
+        top: 80px;
+        left: 9px;
+        width: calc(100vw - 18px);
+        max-width: non
+```
